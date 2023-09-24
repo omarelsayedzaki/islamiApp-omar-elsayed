@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c9_mon/MyThemeData.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c9_mon/home/hadeth/HadethTab.dart';
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(AppLocalizations.of(context)!.app_title),
+          title: Text(AppLocalizations.of(context)!.app_title,style: GoogleFonts.elMessiri(),),
         ),
         bottomNavigationBar: BottomNavigationBar(
           onTap: (index) {

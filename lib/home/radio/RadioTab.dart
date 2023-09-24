@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 class RadioTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class RadioTab extends StatelessWidget {
             child: Center(
               child: Text(
                 "إزاعة القرآن الكريم",
-                style: TextStyle(fontSize: 30),
+                style: GoogleFonts.elMessiri(fontSize: 30),
               ),
             ),
           ),

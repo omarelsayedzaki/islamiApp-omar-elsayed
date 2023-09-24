@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c9_mon/home/quran/ChapterTitleWidget.dart';
 
 class QuranTab extends StatelessWidget {
@@ -137,8 +138,8 @@ class QuranTab extends StatelessWidget {
                         color: Theme.of(context).colorScheme.secondary))),
             width: double.infinity,
             child: Text(AppLocalizations.of(context)!.chapter_name,
-                style: Theme.of(context).textTheme.titleMedium)),
-        Expanded(
+                style:GoogleFonts.elMessiri(textStyle: Theme.of(context).textTheme.titleSmall))),
+         Expanded(
           flex: 3,
           child: ListView.separated(
             itemBuilder: (context, index) {

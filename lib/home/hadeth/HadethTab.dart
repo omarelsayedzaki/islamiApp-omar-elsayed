@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c9_mon/home/hadeth/Hadeth.dart';
 import 'package:islami_c9_mon/home/hadeth/HadethTitleWidget.dart';
 class HadethTab extends StatefulWidget {
@@ -27,7 +28,7 @@ class _HadethTabState extends State<HadethTab> {
                       color: Theme.of(context).colorScheme.secondary,
                       width: 2))),
           child: Text(AppLocalizations.of(context)!.hadeth_number,
-              style: Theme.of(context).textTheme.titleMedium),
+              style: GoogleFonts.elMessiri(textStyle:  Theme.of(context).textTheme.titleMedium)),
         ),
         Expanded(
             child: allHadeth.isEmpty

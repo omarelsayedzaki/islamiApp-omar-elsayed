@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TasbehTab extends StatefulWidget {
   @override
@@ -32,7 +33,8 @@ class _TasbehTabState extends State<TasbehTab> {
         Center(
             child: Text(
           "عدد التسبيحات ",
-          style: TextStyle(fontSize: 25),
+          style: GoogleFonts.elMessiri(fontSize: 25),
+          // style:  TextStyle(fontSize: 25, ),
         )),
         Container(
           alignment: Alignment.center,
@@ -41,7 +43,7 @@ class _TasbehTabState extends State<TasbehTab> {
             borderRadius: BorderRadius.circular(25),
             color: Theme.of(context).primaryColor,
           ),
-          child: Text("$count"),
+          child: Text("$count",style: GoogleFonts.elMessiri(),),
           width: 60,
           height: 60,
         ),
@@ -65,7 +67,7 @@ class _TasbehTabState extends State<TasbehTab> {
               borderRadius: BorderRadius.circular(25),
               color: Theme.of(context).primaryColor,
             ),
-            child: Text(azkar[0]),
+            child: Text(azkar[0],style: GoogleFonts.elMessiri(),),
             width: 200,
             height: 60,
           ),

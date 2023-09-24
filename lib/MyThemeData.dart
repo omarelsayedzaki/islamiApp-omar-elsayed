@@ -50,6 +50,7 @@ class MyThemeData {
   static final ThemeData darkTheme = ThemeData(
       bottomSheetTheme: BottomSheetThemeData(backgroundColor: darkPrimary),
       textTheme: const TextTheme(
+
           titleMedium: TextStyle(
               fontSize: 25, color: Colors.white, fontWeight: FontWeight.w600),
           titleSmall: TextStyle(
@@ -76,11 +77,12 @@ class MyThemeData {
           unselectedItemColor: Colors.white),
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: AppBarTheme(
+
           iconTheme: IconThemeData(color: Colors.white),
           centerTitle: true,
           color: Colors.transparent,
           elevation: 0,
-          titleTextStyle: TextStyle(fontSize: 28, color: Colors.white)),
+          titleTextStyle: TextStyle(fontSize: 28, color: Colors.white,  )),
       colorScheme: ColorScheme.fromSeed(
           seedColor: darkPrimary,
           primary: darkPrimary,

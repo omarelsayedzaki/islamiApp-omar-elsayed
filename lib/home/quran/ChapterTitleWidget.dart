@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c9_mon/chapterDetails/ChapterDetailsScreen.dart';
 
 class ChapterTitleWidget extends StatelessWidget {
@@ -19,8 +20,8 @@ class ChapterTitleWidget extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 8),
           child: Text(
             title,
-            style: Theme.of(context).textTheme.titleSmall,
-          )),
+            style:GoogleFonts.elMessiri(textStyle: Theme.of(context).textTheme.titleSmall),
+           )),
     );
   }
 }
